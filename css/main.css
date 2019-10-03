@@ -100,11 +100,7 @@
   animation: chocolate-drop 500ms 1000ms ease-in forwards;
 }
 
-@keyframes chocolate-drop {
 
-  0% {
-    bottom: 100%;
-  }
 
   100% {
     bottom: 190px;
