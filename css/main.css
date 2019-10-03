@@ -8,17 +8,32 @@
 }
 
 .title {
+  left: -.15em;
+  position: relative;
   color: #990073;
+
+  animation: title-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
   transform: rotate(-11deg);
+  transform-origin: left center;
 }
 
 .intro {
-  color: #c09;
-  transform: rotate(-7deg);
   max-width: 19em;
+  color: #c09;
+
+  animation: intro-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
+  transform: rotate(-7deg);
+  transform-origin: left center;
 }
 
 .btn-ghost {
+  animation: btn-in 200ms 1200ms ease-in forwards;
+  opacity: 0;
+  filter: blur(12px);
   color: #c09;
   border-color: #990073;
 }
@@ -33,23 +48,48 @@
   min-height: 480px;
 }
 
-.text-box {
-  animation: fading 3500ms linear;
-}
-
-@keyframes fading {
+@keyframes title-in {
 
   0% {
-    -webkit-filter: opacity(0);
-  }
-
-  50% {
-    -webkit-filter: opacity(0);
+    filter: blur(12px);
+    opacity: 0;
+    transform: rotate(-11deg);
   }
 
   100% {
-    -webkit-filter: opacity(1);
-    filter: blur(.5px);
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(-9deg);
+  }
+
+}
+
+@keyframes intro-in {
+
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+    transform: rotate(-7deg);
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
+    transform: rotate(-5deg);
+  }
+
+}
+
+@keyframes btn-in {
+
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    filter: blur(0);
+    opacity: 1;
   }
 
 }
@@ -64,7 +104,7 @@
 }
 
 .ice-cream-cone {
-  animation: cone-drop 500ms ease-in forwards;
+  animation: cone-drop 300ms ease-in forwards;
 }
 
 @keyframes cone-drop {
@@ -80,7 +120,7 @@
 }
 
 .ice-cream-mint {
-  animation: mint-drop 500ms 500ms ease-in forwards;
+  animation: mint-drop 300ms 300ms ease-in forwards;
 }
 
 @keyframes mint-drop {
@@ -97,7 +137,7 @@
 
 .ice-cream-chocolate {
   left: 53%;
-  animation: chocolate-drop 500ms 1000ms ease-in forwards;
+  animation: chocolate-drop 300ms 600ms ease-in forwards;
 }
 
 @keyframes chocolate-drop {
@@ -114,7 +154,7 @@
 
 .ice-cream-vanilla {
   left: 48%;
-  animation: vanilla-drop 500ms 1500ms ease-in forwards;
+  animation: vanilla-drop 200ms 900ms ease-in forwards;
 }
 
 @keyframes vanilla-drop {
@@ -130,7 +170,7 @@
 }
 
 .ice-cream-cherry {
-  animation: cherry-drop 500ms 2000ms ease-in forwards;
+  animation: cherry-drop 150ms 1500ms ease-in forwards;
 }
 
 @keyframes cherry-drop {
