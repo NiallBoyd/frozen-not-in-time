@@ -1,0 +1,146 @@
+.background-image {
+  background-image: repeating-linear-gradient(-33deg, #b3fbff, #c9fcff 20px, #d4fdff 20px);
+}
+
+.banner {
+  font-family: "Fredoka One", sans-serif;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .3);
+}
+
+.title {
+  color: #990073;
+  transform: rotate(-11deg);
+}
+
+.intro {
+  color: #c09;
+  transform: rotate(-7deg);
+  max-width: 19em;
+}
+
+.btn-ghost {
+  color: #c09;
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  background-color: rgba(255, 0, 153, .1);
+  border-color: #990073;
+  color: #c09;
+}
+
+.ice-cream-section {
+  min-height: 480px;
+}
+
+.text-box {
+  animation: fading 3500ms linear;
+}
+
+@keyframes fading {
+
+  0% {
+    -webkit-filter: opacity(0);
+  }
+
+  50% {
+    -webkit-filter: opacity(0);
+  }
+
+  100% {
+    -webkit-filter: opacity(1);
+    filter: blur(.5px);
+  }
+
+}
+
+.ice-cream {
+  bottom: 100%;
+  left: 50%;
+  width: 180px;
+  height: 180px;
+
+  transform: translateX(-50%);
+}
+
+.ice-cream-cone {
+  animation: cone-drop 500ms ease-in forwards;
+}
+
+@keyframes cone-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
+}
+
+.ice-cream-mint {
+  animation: mint-drop 500ms 500ms ease-in forwards;
+}
+
+@keyframes mint-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 104px;
+  }
+
+}
+
+.ice-cream-chocolate {
+  left: 53%;
+  animation: chocolate-drop 500ms 1000ms ease-in forwards;
+}
+
+@keyframes chocolate-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 190px;
+  }
+
+}
+
+.ice-cream-vanilla {
+  left: 48%;
+  animation: vanilla-drop 500ms 1500ms ease-in forwards;
+}
+
+@keyframes vanilla-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 263px;
+  }
+
+}
+
+.ice-cream-cherry {
+  animation: cherry-drop 500ms 2000ms ease-in forwards;
+}
+
+@keyframes cherry-drop {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 342px;
+  }
+
+}
